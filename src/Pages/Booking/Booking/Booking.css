@@ -1,0 +1,14 @@
+.package{
+    background-color: rgb(252, 243, 231);
+    padding: 50px;
+  
+    border-radius: 5px;
+}
+.package img{
+    
+
+}
+.flexible-container{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,9 @@
+.blogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog{
+    margin: 30px;
+    background-color: cornsilk;
+}

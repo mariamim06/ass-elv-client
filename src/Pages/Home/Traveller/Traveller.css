@@ -1,0 +1,10 @@
+.traveller{
+    width: 100%;
+    background-color: rgb(245, 205, 154);
+    margin: px;
+    padding: 70px;
+    border-radius: 4px;
+}
+.traveller img{
+    border-radius: 70px;
+}
