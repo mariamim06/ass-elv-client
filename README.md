@@ -1,3 +1,8 @@
+<!-- 
+Its possible to delete a package with this url :
+https://tourx-website-3c1ea.web.app/managePackages
+ -->
+
 
 # tourX Website
 

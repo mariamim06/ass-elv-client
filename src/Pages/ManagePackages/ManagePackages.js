@@ -12,7 +12,7 @@ const ManagePackages = () => {
     }, [])
 
     const handleDelete = id => {
-        const url = `https://safe-bastion-02103.herokuapp.com/packages${id}`;
+        const url = `https://safe-bastion-02103.herokuapp.com/packages/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -8,7 +8,7 @@ const Booking = () => {
     const [pacKage, setPackage] = useState({});
 
     useEffect( () =>{
-        fetch(`https://safe-bastion-02103.herokuapp.com/packages${packageId}`)
+        fetch(`https://safe-bastion-02103.herokuapp.com/packages/${packageId}`)
         .then(res => res.json())
         .then(data => setPackage(data));
     }, [])
