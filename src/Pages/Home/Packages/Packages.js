@@ -8,7 +8,7 @@ import './Packages.css'
 const Packages = () => {
     const [packages, setPackages] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://safe-bastion-02103.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, [])

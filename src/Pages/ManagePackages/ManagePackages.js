@@ -6,13 +6,13 @@ const ManagePackages = () => {
   
     const [packages, setPakages] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://safe-bastion-02103.herokuapp.com/packages')
         .then(res=>res.json())
         .then(data => setPakages(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/packages/${id}`;
+        const url = `https://safe-bastion-02103.herokuapp.com/packages${id}`;
         fetch(url, {
             method: 'DELETE'
         })
