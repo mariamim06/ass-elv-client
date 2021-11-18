@@ -7,13 +7,13 @@ const ManageBookings = () => {
     const [bookings, setbookings] = useState([])
 
     useEffect( () => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://safe-bastion-02103.herokuapp.com/bookings')
         .then(res=>res.json())
         .then(data => setbookings(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://safe-bastion-02103.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -7,14 +7,14 @@ const BookingReview = () => {
     const [bookings, setBookings] = useState([])
 
     useEffect( () => {
-        const url = `http://localhost:5000/userBookings?email=${user.email}`
+        const url = `https://safe-bastion-02103.herokuapp.com/userBookings?email=${user.email}`
         fetch(url)
         .then(res=> res.json())
         .then(data => setBookings(data));
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://safe-bastion-02103.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

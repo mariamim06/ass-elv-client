@@ -42,7 +42,7 @@ const Booking = () => {
         }
         console.log(booking);
         //send order to server
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://safe-bastion-02103.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'
