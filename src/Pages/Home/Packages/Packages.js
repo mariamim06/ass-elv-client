@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import Booking from '../../Booking/Booking/Booking';
 import Package from '../Package/Package';
 import './Packages.css'
 
@@ -12,10 +13,11 @@ const Packages = () => {
             .then(res => res.json())
             .then(data => setPackages(data));
     }, [])
-    
+  
     return (
         <div id="packages">
             <h2 className="my-5">Our Packages</h2>
+           
             <div className="package-container">
             
             {
@@ -23,7 +25,9 @@ const Packages = () => {
                     id={pacKage.id}
                     pacKage ={pacKage}
                 ></Package>)
+                
             }
+
         </div>
         </div>
     );

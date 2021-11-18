@@ -8,6 +8,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Booking from './Pages/Booking/Booking/Booking';
 import Header from './Pages/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import About from './Pages/About/About';
 import AddPackage from './Pages/AddPackage/AddPackage';
 import ManagePackages from './Pages/ManagePackages/ManagePackages';
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           
           <PrivateRoute path="/about">
